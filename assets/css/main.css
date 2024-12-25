@@ -139,7 +139,8 @@ section {
 .about-content {
   padding-right: 2rem;
 }
-.about-content1{
+
+.about-content1 {
   padding: 6rem 2rem;
 }
 
@@ -209,6 +210,20 @@ section {
   .about-container {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .hero-content p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-head {
+    font-size: 3rem;
   }
 
   .about-container1 {
@@ -381,6 +396,10 @@ section {
   .best-seller-heading h2 {
     font-size: 2rem;
   }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
 
 /* Features Grid */
@@ -389,6 +408,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   max-width: 1600px;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -449,14 +469,15 @@ footer {
   font-weight: 700;
 }
 
-.footer-section i {
-  transform: scale(1.5);
-  margin-right: 5px;
-  margin-top: 5px;
-}
-
 .reach-us-content {
   display: flex;
+  flex-direction: row;
+}
+
+.reach-us-content i {
+  display: flex;
+  padding-top: 7px;
+  padding-right: 10px;
   flex-direction: row;
 }
 
@@ -492,7 +513,7 @@ footer {
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: #800700;
     padding: 1rem;
     flex-direction: column;
     text-align: center;
@@ -650,13 +671,18 @@ footer {
 
 @media (max-width: 768px) {
   .features1-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    transform: scale(0.8);
   }
 
-  .features1-grid::before,
-  .features1-grid1::after {
-    display: none;
+  .discount h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 28px;
+  }
+
+  .discount p {
+    font-size: 4rem;
+    font-weight: 800;
   }
 
   .why-section {
