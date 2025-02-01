@@ -435,11 +435,21 @@ footer {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: space-between;
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 0 12%; */
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 12%;
 }
 
 .footer-section h3 {
@@ -496,6 +506,11 @@ footer {
 }
 
 .copyright {
+  text-align: start;
+  padding: 1rem;
+}
+
+.copyright1 {
   text-align: center;
   padding: 1rem;
 }
