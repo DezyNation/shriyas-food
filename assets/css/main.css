@@ -437,19 +437,15 @@ footer {
 .footer-grid {
   display: flex;
   flex-direction: column;
-  /* align-items: center;
+  align-items: center;
   justify-content: space-between;
-  max-width: 1600px;
+  /*max-width: 1600px;
   margin: 0 12%; */
 }
 
 .footer-items {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1600px;
-  margin: 0 12%;
 }
 
 .footer-section h3 {
@@ -507,12 +503,16 @@ footer {
 
 .copyright {
   text-align: start;
-  padding: 1rem;
+}
+
+.copyright-strip {
+  display: flex;
+  flex-direction: column;
+  /* width: fit-content; */
 }
 
 .copyright1 {
   text-align: center;
-  padding: 1rem;
 }
 
 /* Responsive Menu */
@@ -734,4 +734,10 @@ footer {
 .footer-gap {
   height: 15px;
   background-color: #ffd00c;
+}
+
+.mandala {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
